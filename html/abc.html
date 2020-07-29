@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="card">
+        <div class="font-card">
+            <div class="image-card">
+                <input type="file" name="imageCard" id="inputImageCardEdit">
+                <img src="${card.imageVocab}" alt="" id="imageCardEdit">
+                <div class="error" id='imageCollectionErrorEdit'></div>
+            </div>
+            <div class="main-vocab">
+                <div class="input-vocab">
+                    <input type="text" name="vocab" placeholder="Add vocab" value="${card.vocab}">
+                    <div class="error" id='vocabErrorEdit'></div>
+                </div>
+                <div class="pronuncitaion">
+                    <div class="sound">
+                        <input type="file" name="sound">
+                        <i class="fas fa-volume-up"></i>
+                        <div class="error" id='soundErrorEdit'></div>
+                    </div>
+                    <div class="input-wrapper">
+                        <input type="text" name="pronun" placeholder="Add pronun" value="${card.pronunciation}" >
+                        <div class="error" id="pronunErrorEdit"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="back-card">
+            <div class="input-wrapper">
+                <input type="text" name="meaning" placeholder="Meaning" value="${card.meaning}">
+                <div class="error" id='meaningErrorEdit'></div>
+            </div>
+            <div class="input-wrapper">
+                <input type="text" name="samemeaning" placeholder="Same meaning" value="${card.sameMeaning}">
+                <div class="error" id='sameMeaningErrorEdit'></div>
+            </div>
+            <div class="Example">
+                <h3 style="padding-left: 20px ;">Example</h3>
+                <input type="text" name="example" placeholder="Add Example">
+                <div class="error" id='exampleErrorEdit'></div>
+            </div>
+        </div>
+        <button > <i class="far fa-check-circle"></i></button>
+    </div>
+</body>
+</html>

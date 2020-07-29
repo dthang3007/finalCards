@@ -1,0 +1,84 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/collections.css">
+    <link rel="stylesheet" href="../css/screenCard.css">
+    <link rel="stylesheet" href="../css/createCard.css">
+    <link rel="stylesheet" href="../css/editCardScreen.css">
+    <link rel="stylesheet" href="../css/loginScreen.css" />
+    <link rel="stylesheet" href="../css/register.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/quizz.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Geo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue&display=swap" rel="stylesheet">
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-storage.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyAERUxg1sEbP7UcAA7z7i9FN9lsSZQtMII",
+            authDomain: "flashcard-online.firebaseapp.com",
+            databaseURL: "https://flashcard-online.firebaseio.com",
+            projectId: "flashcard-online",
+            storageBucket: "flashcard-online.appspot.com",
+            messagingSenderId: "979888831859",
+            appId: "1:979888831859:web:443ef7ce89317546cc1906"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+</head>
+
+<body>
+    <div class='app-container' id="app-container">
+        <nav role='navigation'>
+       
+            <a href="#"><img src="../image/dfa77fc3-9b3d-4777-a79f-9074d43c872c_200x200.png" style="width: 100px; height: 60px;margin-left: 150px;" alt=""></a>
+   
+            <ul>
+              <li><a href="#" id="home">Home</a></li>
+              <li><a href="#" id="nav-create">+ Create Card</a></li>
+              <li><a href="#footer">Contact Us</a></li>
+              <li><a href="#" id="user">About</a><i class="far fa-user"></i>
+                <ul>
+                  
+                  <li style="width: 138px;"><a href="" id="log-out">Sign out</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>  
+        <div id="app">
+        </div>
+        <div class="footer" id="footer">
+          <a href="https://www.facebook.com/ducthang.min"><i class="fab fa-facebook-square"></i> Facebook</a>
+          <a href="https://www.instagram.com/pduc.thang/?hl=vi"><i class="fab fa-instagram-square"></i>  Instagram</a>
+          </div>
+    </div>
+    
+    <script src="../js/quizz.js"></script>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/component.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/view.js"></script>
+    <script src="../js/model.js"></script>
+    <script src="../js/utils.js"></script>
+    <script src="../js/controller.js"></script>
+  
+</body>
+
+</html>

@@ -1,0 +1,313 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-family: 'Epilogue', sans-serif;
+} */
+/* ul{
+    list-style: none;
+}
+nav{
+    background-color: #FFE500;
+} */
+/* i{
+    color: black;
+    margin-right: 4px;
+} */
+*{
+  font-family: 'Lato';
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+/* .nav-bar-container {
+    height: 50px;
+    display: flex;
+    margin: 0px 144px;
+    justify-content: space-between;
+}
+.nav-bar-container .logo {
+    line-height: 50px;
+    font-size: 36px;
+    font-weight: 600;
+}
+ .nav-bar-container .list-main-navbar {
+    width: 416px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+ .nav-bar-container .list-main-navbar .navbar-item {
+    font-weight: 500;
+    font-size: 25px;
+}
+.nav-bar-container .list-main-navbar .navbar-item i{
+    line-height: 50px;
+}
+.nav-bar-container .list-main-navbar .navbar-item:hover{
+    color: rgb(141, 140, 140);
+} */
+
+  /* li {
+    float: left;
+  } */
+  
+  /* li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li button:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content button {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+  }
+  
+.dropdown-content button:hover {background-color: white;}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+  } */
+
+
+/*| Navigation |*/
+
+nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background:#32cdff;
+  box-shadow: 0 3px 10px -2px rgba(0,0,0,.1);
+  border: 1px solid rgba(0,0,0,.1);
+}
+  nav ul{
+    list-style: none;
+    position: relative;
+    float: right;
+    margin-right: 100px;
+    display: inline-table;
+  }
+    nav ul li{
+      display: flex;
+      padding: 20px;
+      float: left;
+      -webkit-transition: all .2s ease-in-out;
+      -moz-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+    }
+
+    nav ul li:hover{background: rgba(0,0,0,.15);}
+    nav ul li:hover > ul{display: block;}
+    nav ul li{
+      float: left;
+      -webkit-transition: all .2s ease-in-out;
+      -moz-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out;
+    }
+      nav ul li a{
+        display: block; 
+        margin-right:10px ;
+        color: #222; 
+        font-size: .9em;
+        letter-spacing: 1px;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+      nav ul ul{
+        display: none;
+        background: #fff;
+        position: absolute; 
+        top: 100%;
+        box-shadow: -3px 3px 10px -2px rgba(0,0,0,.1);
+        border: 1px solid rgba(0,0,0,.1);
+      }
+        nav ul ul li{float: none; position: relative;}
+          nav ul ul li a {
+            padding: 15px 30px; 
+            border-bottom: 1px solid rgba(0,0,0,.05);
+          }
+          nav ul ul ul {
+            position: absolute; 
+            left: 100%; 
+            top:0;
+          }	
+  
+  .footer{
+            align-items: center;
+            color: #c4c4c4;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            margin-top: 75px;
+        } 
+        
+        .footer a{
+         display: inline-block;
+            margin: 0 10px;
+            padding: 5px 15px;
+            font-size: 30px;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  border-radius:50px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius:50px
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  border-radius:50px
+}
+
+.flip-card-back {
+  background-color: rgb(50, 205, 255);
+  color: rgb(0, 0, 0);
+  transform: rotateY(180deg);
+}

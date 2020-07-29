@@ -1,0 +1,128 @@
+.edit-card-screen{
+    height: auto;
+    background-color: #D2FFFF;
+}
+.edit-card-screen .edit-card-main{
+    width: 1520px;
+    
+    margin: 30px auto;
+    padding-bottom:30px ;
+    display: flex;
+}
+.edit-card-screen .edit-card-main .infor-collection-card-edit{
+    width: 350px;
+    height: 550px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: FFE500;
+    margin-top: 38px;
+    border: 1px solid rgba(159, 244, 178, 0.5);
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+.edit-card-screen .edit-card-main .infor-collection-card-edit .eidt-collection-card #collectionCardEdit{
+    width: 275px;
+    height: 271px;
+    border-radius: 20px;
+    margin: 35px;
+    position: absolute;
+    opacity: 0; 
+}
+.edit-card-screen .edit-card-main .infor-collection-card-edit .eidt-collection-card img{
+width: 275px;
+    height: 271px;
+    border-radius: 20px;
+    margin: 35px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.edit-card-screen .edit-card-main .infor-collection-card-edit .input-wrapper input {
+    width: 90%;
+    padding: 10px 13px;
+    height: 55px;
+    font-size: 30px;
+    margin: 20px;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+}
+
+.edit-card-screen .edit-card-main .main-edit-card{
+    
+    width: 1000px;
+    margin: 39px 0px 0px 38px;
+    background: #FFFFFF;
+    box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+
+}
+.edit-card-screen .edit-card-main .main-edit-card .card .font-card{
+    width: 425px;
+    height: 460px;
+    /* width: 557px; */
+    background: #FFE500;
+    box-shadow: 2px -4px 4px rgba(0, 0, 0, 0.1), -2px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    text-align: center;
+}
+.edit-card-screen .edit-card-main .main-edit-card .card{
+    margin: 43px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.edit-card-screen .edit-card-main .main-edit-card .card .font-card .image-card input[type="file"]{
+    width: 260px;
+    height: 266px;
+    position: absolute;
+    margin: 42px 42px 0px 42px;
+    opacity: 0;
+}
+.edit-card-screen .edit-card-main .main-edit-card .card .font-card img{
+    width: 260px;
+    height: 266px;
+    margin: 42px 42px 0px 42px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.edit-card-screen .edit-card-main .main-edit-card .card .font-card .main-vocab .input-vocab input[type="text"]{
+    width: 300px;
+    height: 50px;
+    margin: 30px;
+    border-radius: 30px;
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 40px;
+}
+.edit-card-screen .edit-card-main .main-edit-card .card .font-card .main-vocab .pronuncitaion{
+    display: flex;
+    margin-left: 120;
+}
+.edit-card-screen .edit-card-main .main-edit-card .card .font-card .main-vocab input[type="file"] {
+    width: 18px;
+    font-size: 16px;
+    position: absolute;
+    opacity: 0;
+}
+
+.edit-card-screen .edit-card-main .main-edit-card .card .font-card .main-vocab input[type="text"] {
+    height: 20pxx;
+    border: 1px solid;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+.edit-card-screen .edit-card-main .main-edit-card .card .back-card{
+    width: 425px;
+    height: 460px;
+    /* width: 557px; */
+    background: #FFE500;
+    box-shadow: 2px -4px 4px rgba(0, 0, 0, 0.1), -2px 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+.edit-card-screen .edit-card-main .main-edit-card .card .back-card input[type="text"] {
+    margin: 20px;
+    width: 90%;
+    height: 50px;
+    padding: 20px;
+    font-size: 20px;
+    border: 1px solid;
+}
+.edit-card-screen .edit-card-main .main-edit-card button i {
+ font-size: 60px;}
