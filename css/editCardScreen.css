@@ -1,6 +1,7 @@
 .edit-card-screen{
     height: auto;
     background-color: #D2FFFF;
+    min-height: 100vh;
 }
 .edit-card-screen .edit-card-main{
     width: 1520px;

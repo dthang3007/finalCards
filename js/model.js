@@ -138,7 +138,7 @@ model.updateCollection=async(infor,id)=>{
     view.setActiveScreen("collectionUserScreen")
 }
 model.register = (firstName, lastName, email, password) => {
-    firebase
+     firebase
       .auth()
       .createUserWithEmailAndPassword(email, password)
       .then((user) => {
@@ -146,28 +146,26 @@ model.register = (firstName, lastName, email, password) => {
         firebase.auth().currentUser.sendEmailVerification();
         firebase.auth().currentUser.updateProfile({
             photoUrl: "https://i.pinimg.com/originals/8e/34/e3/8e34e3e4a570228fecaf7ce3c81328f0.jpg",
-          displayName: firstName + " " + lastName,
+            displayName: firstName + " " + lastName,
         });
         alert('Register success, please check your email <(")');
-        view.setActiveScreen("loginScreen");
+
       })
       .catch((err) => {
         alert(err.message);
       });
   };
   
-  model.login = (email, password) => {
-    firebase
-      .auth()
-      .signInWithEmailAndPassword(email, password)
-      .then((user) => {
+  model.login =  (email, password) => {
+     firebase.auth().signInWithEmailAndPassword(email, password).then((user) => {
         console.log(user);
-        if (user.user.emailVerified) {
-        //   model.currentUser = {
-        //     displayName: user.user.displayName,
-        //     email: user.user.email,
-        //   };
-        //   view.setActiveScreen("collectionUserScreen");
+        if (user&&user.user.emailVerified) {
+            model.currentUser = {
+                displayName: user.user.displayName,
+                email: user.user.email,
+                photoUrl:"https://i.pinimg.com/originals/8e/34/e3/8e34e3e4a570228fecaf7ce3c81328f0.jpg"
+            }
+            console.log(user)
         } else {
           alert("Please verify your email first");
         }
