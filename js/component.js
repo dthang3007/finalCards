@@ -10,7 +10,7 @@ components.collectionUserScreen=`
                     <h4>Bạn nên tạo các bộ thẻ từ mới theo chủ đề sẽ giúp bạn ghi nhớ lâu hơn</h4>
                 </div>
                 <div class="list-collections-card">
-                        
+                        <h1 style="line-height:600px;margin-left:400px">Bộ thẻ trống... </h1>
                     </div>
                 </div>
             
@@ -28,6 +28,11 @@ components.cardUserScreen=`<div class="add-card">
 
 </div>
 </div>  `
+components.loading=`
+<div class="loading-page">
+  <img id="loading" src="http://www.vitorazevedo.net/external_files/loading_small.png">
+</div>
+`
 components.createCards=`    <div class="create-card-screen">
 <div class="main-create">
         <form id="firebase-add" runat="server">

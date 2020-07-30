@@ -37,7 +37,7 @@ model.loadCardsUser = async (id) => {
     
 }
 model.createDataCollection = async (infor) => {
-    console.log(infor)
+    view.setActiveScreen("loading")
     await firebase.firestore().collection("collections").add(infor)
     await model.createDataCard()
     view.setActiveScreen("collectionUserScreen")

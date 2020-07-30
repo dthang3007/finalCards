@@ -102,6 +102,7 @@
     display: flex;
     flex-wrap: wrap;
     padding:0px 20px 20px 20px ;
+    min-height: 500px;;
 }
 .add-collection-card .create-collection-container .main-collection-card .list-collections-card .collection-item p{
     font-size: 34px;

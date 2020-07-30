@@ -123,6 +123,9 @@ view.setActiveScreen = (screenName) => {
                 controller.register(registerInfo);
             });
             break;
+        case "loading":
+            document.getElementById("app").innerHTML=components.loading    
+            break
         case "quizzScreen":
             document.getElementById("app").innerHTML = components.quizzScreen;
             const startButton = document.getElementById('start-btn')
@@ -246,6 +249,7 @@ view.setErrorMessage = (elementId, message) => {
 };
 
 view.addCollectionUser = (collection) => {
+    document.querySelector('.list-collections-card').innerHTML=" "
     const collectionWrapper = document.createElement('div')
     collectionWrapper.classList.add("gallery")
     collectionWrapper.id = collection.id
@@ -264,7 +268,7 @@ view.addCollectionUser = (collection) => {
         </div>
       </a>
     </div>
- `
+ ` 
     const listCollection = document.querySelector('.list-collections-card')
     listCollection.appendChild(collectionWrapper)
     collectionWrapper.addEventListener("click", () => {
